@@ -13,14 +13,30 @@
 </head>
 <body>
 
+<div class="warning">
+  <center>
 
+    <div class="disclaimer">
+      Video (not yet created) explains for first time users that Kindness App is all about developing self-compassion by having you reflect on one thing every day that you have done to benefit to someone (or yourself). 
+      <hr>
+      This website allows you to get hands on with my app <b>Kindness</b> before it's iOS/Android release<br>and let's you provide feedback.
+      <hr>
+      Please ignore animation pop-ins. Images are being loaded from web server. <br>
+      In release, they will be loaded from device so this won't be an issue
+      <br><br>
+      <p class="nextTip" onclick="continueToSite()">Continue</p>
 
-<div class="device-screen">
+    </div>
+
+  </center>
+</div>
+<div class="site" style="display: none;">
+
   
   <center>
 
 <div class="alert">
-<b>Please help!</b> By leaving me feedback <button>click here</button>
+<b>Please help!</b> By leaving me feedback <button class='scrollBtn'>click here</button>
 </div>
 
 
@@ -34,14 +50,23 @@
         <img src="img/phone.png"  width="40px">
         <br>PHONE
       </div>
-</div>      
+</div>    
+    <p class="view-type">Currently viewing kindness app in phone view.</p>  
     <iframe id="frameID" src="http://www.w3schools.com"></iframe>
 
 <!-- CAROUSEL -->
     <div style="carousel">
     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
   <!-- Indicators -->
+
+
+
+
+
   <ol class="carousel-indicators">
+
+
+
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
     <li data-target="#carousel-example-generic" data-slide-to="1"></li>
     <li data-target="#carousel-example-generic" data-slide-to="2"></li>
@@ -50,34 +75,26 @@
   <!-- Wrapper for slides -->
   <div class="carousel-inner" role="listbox">
     <div class="item active">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>     
+      <p>I haven't installed a limit on the number of kindness per day</p> 
+      <p>You can refresh the page and the app will remember your actions.</p>     
     </div>
     <div class="item">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      <p>This allows you to see what happens as you rack up daily actions.</p> 
+      <p>The idea behind the app is to help people form routine / daily habit.</p>
     </div>
       <div class="item">
-      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p> 
-      <p>Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
+      <p>As well as finishingthe app, there's a few next steps being put in place for Kindness.</p> 
+      <p>But if this sparks any ideas or you want to collaborate on Kindness, then let me know in the feedback below.</p>
     </div>
     </div>
-  </div>
+    <a href="#carousel-example-generic" role="button" data-slide="next">
+    <p class="nextTip">NEXT TIP</p>
+  </a>
 
-  <!-- Controls -->
-  <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
-    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
-    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-</div>
-<!--carousel-->
+  </div>
+  
   </center>
-</div>
+
 
 <div>
 <center>
@@ -92,17 +109,18 @@
 <div class="btn-group" role="group" aria-label="...">
   <button type="button" class="btn btn-default">Bug</button>
   <button type="button" class="active btn btn-default">Comment</button>
-  <button type="button" class="btn btn-default">Compliment</button>
+  <button type="button" class="btn btn-default">Idea</button>
 </div>
 
 
 <br>
 <br>
-<div class="thanks-section">
+<div class="thanks-section" style="display: none;">
   <h1>Thank you so much!</h1>
+  <p class="nextTip" onclick="moreFeedback()">Give more feedback</p>
 </div>
 <div class="contact-section">
-  <p>Your name: <input type="text" placeholder="optional" id="name" style="width: 70%; color: black;"></p>
+  <p>Your name:&nbsp;&nbsp;<input type="text" placeholder="optional" id="name" style="width: 70%; color: black;"></p>
   <br>
   <fieldset class="form-group">
       <textarea class="form-control" id="message-area" rows="3" placeholder="enter your message here.."></textarea>
@@ -117,7 +135,7 @@
   </center>
   </div>
 </div>
-
+</div>
 <script src="index.js"></script>
 <script src="https://www.gstatic.com/firebasejs/3.2.1/firebase.js"></script>
 <script>

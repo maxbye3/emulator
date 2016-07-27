@@ -4,9 +4,11 @@
  }
 
 
+
 body{
-  background: #eb6b56; 
-   /* background: #f37934; */
+  padding-top: 30vh;
+  background: #3fb0ac; 
+   /* background: #fae596; */
   transition: 1s background;
   width: 100%; 
   height: 100vh; 
@@ -14,6 +16,16 @@ body{
   font-family: Lato; 
   color: white;
 }
+
+
+/*  WARNING  */
+.warning .disclaimer{
+  
+  width: 700px;
+  border: white solid 2px;
+  padding: 20px;
+}
+/* warning */
 
 .phone,.tablet{
   transition: 1s opacity;
@@ -23,6 +35,13 @@ body{
   opacity: .5;
 }
 
+.nextTip{
+    color: white;
+    border: white solid 2px;
+    width: 150px;
+    padding: 10px;
+    margin-top: 5px;
+}
 
 .deviceWidth{
   text-align: left;
@@ -52,7 +71,7 @@ body{
 }
 
 .carousel{
-  height: 125px;
+  height: 175px;
 }
 
 .carousel-control.left,.carousel-control.right{
@@ -65,17 +84,21 @@ body{
 }
 
 .alert{
-  color: white;
-  top: 0px;
-  background: #2969b0;
-  width: 100vw;
-  height: 32px;
-  padding-top: 2.5px;
-  margin-bottom: 15px;
+    color: black;
+    top: 0px;
+    background: #dddfd4;
+    width: 100vw;
+    height: 40px;
+    padding-top: 5px;
+    margin-bottom: 15px;
+}
+
+.scrollBtn{
+  background: #fae596;
+  color: black;
 }
 
 .alert button{
-  background: #eb6b56;
   border: 0px;
   border-radius: 5px;
   margin-left: 5px;
@@ -97,7 +120,7 @@ body{
 
 .feedbackSection{
   padding-top: 15px;
-  background: #00a885;
+  background: #173e43;
   width: 100vw;
 }
 
