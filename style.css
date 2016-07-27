@@ -1,0 +1,117 @@
+@font-face {
+  font-family: Lato;
+  src: url("./font/Lato-Light.ttf"); 
+ }
+
+
+body{
+  background: #eb6b56; 
+   /* background: #f37934; */
+  transition: 1s background;
+  width: 100%; 
+  height: 100vh; 
+  display: block; 
+  font-family: Lato; 
+  color: white;
+}
+
+.phone,.tablet{
+  transition: 1s opacity;
+}
+
+.phone{
+  opacity: .5;
+}
+
+
+.deviceWidth{
+  text-align: left;
+  width: 600px;
+  height: 500px;
+  color: white;
+}
+
+#frameID{
+  height: 667px;
+  width: 375px;
+   transition: 1s height,1s width;
+}
+
+.menu{
+  cursor: pointer;
+  display:inline-block;
+  margin-left: 20px;
+  margin-bottom: 15px;
+  margin-top: 0px;
+  border: white solid 2px;
+  height: 100%;
+  width: 80px;
+  color: white;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.carousel{
+  height: 125px;
+}
+
+.carousel-control.left,.carousel-control.right{
+  background-image: none;
+}
+
+
+.carousel-inner {
+    margin-top: 20px;
+}
+
+.alert{
+  color: white;
+  top: 0px;
+  background: #2969b0;
+  width: 100vw;
+  height: 32px;
+  padding-top: 2.5px;
+  margin-bottom: 15px;
+}
+
+.alert button{
+  background: #eb6b56;
+  border: 0px;
+  border-radius: 5px;
+  margin-left: 5px;
+}
+
+.carousel-control {
+    position: absolute;
+    top: auto;
+    bottom: 30px;
+}    
+
+.carousel-control .glyphicon-chevron-left, .carousel-control .icon-prev {
+    left: 150%;
+}
+
+.carousel-control .glyphicon-chevron-right, .carousel-control .icon-prev {
+    right: 150%;
+}
+
+.feedbackSection{
+  padding-top: 15px;
+  background: #00a885;
+  width: 100vw;
+}
+
+.form-group {
+     margin-bottom: 0px; 
+}
+
+
+textarea.form-control {
+    height: auto;
+    width: 80%;
+    padding-bottom: 20px;
+}
+
+.feedbackSection{
+  padding-bottom: 30px;
+}
