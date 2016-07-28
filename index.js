@@ -56,6 +56,7 @@ function phone(){
 }
 
 function tablet(){
+
     console.log("tablet here");
     $(".phone").css("opacity","1");
     $(".tablet").css("opacity",".5");
@@ -66,6 +67,14 @@ function tablet(){
      $(".view-type").html("Currently viewing kindness app in tablet view.");
 
     $("#frameID").css({"height":"1024px","width":"768px"});
+
+
+       
+        setTimeout(function(){ 
+            var iframe = document.getElementById('frameID');
+            iframe.src = iframe.src;
+         }, 1000);
+
 }
 
 // function buttonClick(){
