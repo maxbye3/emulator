@@ -53,6 +53,15 @@ function phone(){
     $("body").css("background","#3fb0ac");
     $(".scrollBtn").css("background","#fae596");
     $(".scrollBtn").css("color","black");
+
+
+
+       
+        setTimeout(function(){ 
+            var iframe = document.getElementById('frameID');
+            iframe.src = iframe.src;
+         }, 1000);
+         
 }
 
 function tablet(){
