@@ -18,6 +18,11 @@ function continueToSite(){
     $("body").css("padding-top","0px");
     $(".disclaimer").hide();
     $(".site").show();
+
+
+                var iframe = document.getElementById('frameID');
+            iframe.src = iframe.src;
+            
 }
 
 function writeUserData(messageType,message,name) {
@@ -92,13 +97,6 @@ function tablet(){
 
 }
 
-// function buttonClick(){
-//     $(".btn-default").removeClass("active");
-//     console.log($(this));
-//     debugger;
-// }
-
-
 $( ".btn-default" ).click(function() {
   $(".btn-default").removeClass("active");
   $(this).addClass("active");
@@ -107,4 +105,8 @@ $( ".btn-default" ).click(function() {
 function moreFeedback(){
     $(".thanks-section").fadeOut();
     $(".contact-section").fadeIn();
+}
+
+function scrollBtn(){
+    window.scrollTo(0,document.body.scrollHeight);
 }
