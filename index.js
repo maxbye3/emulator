@@ -41,6 +41,12 @@ function completeFeedback(){
     $("#name").val('')
 }
 
+
+function refresh(){
+            var iframe = document.getElementById('frameID');
+            iframe.src = iframe.src;
+}
+
 function phone(){
     // console.log("phone here"+);
     $(".phone").css("opacity",".5");
@@ -61,7 +67,7 @@ function phone(){
             var iframe = document.getElementById('frameID');
             iframe.src = iframe.src;
          }, 1000);
-         
+
 }
 
 function tablet(){
